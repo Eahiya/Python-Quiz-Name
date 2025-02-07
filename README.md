@@ -1,156 +1,49 @@
-# Python-Quiz-Game
-# A MCQ quiz game using python Program
+# Quiz Game
 
-print (" \n                                                   Quiz Game \n ")
-nam = input(" Please Enter Your Name: ")
-print(' Hello! ',nam)
-quistion = input(" Do you want to play a computer quiz game ? (yes|no): \n ")
-if quistion != "yes":
-    quit()
-print(" Okay let's play :)")
-score = 0
+This is an improved version of a text-based Quiz Game written in Python. The game consists of 20 general knowledge questions, and the player earns points for each correct answer.
 
-answer1 = input(" 1. What is the cleanest country in thr world? \n  ")
-if answer1.lower() == "switzerland":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorrect Answer! \n ")
+## Features
+- Interactive gameplay with user input
+- Automatic scoring system with percentage calculation
+- Case-insensitive answer validation
+- Multiple correct answers for some questions
+- Improved user experience with formatted output and slight delays for readability
 
-answer2 = input(" 2. Who was the most highy paid UFC athlete in 2021? \n ")
-if answer2.lower() == "connor mcgregor" or "connor":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorect Answer! \n ")
+## How to Play
+1. Run the script in a Python environment.
+2. Enter your name when prompted.
+3. Answer the questions by typing your response and pressing Enter.
+4. Your score and percentage will be displayed at the end of the game.
 
-answer3 = input(" 3. When was the 1st World War started? \n ")
-if answer3.lower() == "1914" or "nineteen fourteen":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorrect Answer! \n ")
+## Prerequisites
+- Python 3.x installed on your system.
 
-answer4 = input(" 4. Who was the founder and the C.E.O OF amazon.com? \n ")
-if answer4.lower() == "jeff bezzos" or "jeffry":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(' Incorrect Answer! \n ')
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/quiz-game.git
+   ```
+2. Navigate to the project folder:
+   ```sh
+   cd quiz-game
+   ```
+3. Run the script:
+   ```sh
+   python quiz_game.py
+   ```
 
-answer5 = input(" 5. What is the capital of United States of America? \n ")
-if answer5.lower() == "washington dc" or "washington":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorrect Answer! \n ")
+## Issues and Improvements
+### Known Issues
+- The quiz currently has a fixed set of questions.
 
-answer6 = input(" 6. Which country has the highest population? \n ")
-if answer6.lower() == "china":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorrect Answer! \n ")
+### Possible Improvements
+- Implement a scoring leaderboard.
+- Allow players to add custom questions.
+- Integrate a timer for each question.
+- Enhance UI with a graphical interface using Tkinter or PyQt.
 
-answer7 = input(" 7. How many countries are there in this world? \n ")
-if answer7.lower() == "195" or "hundred and ninety five":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorrect Answer! \n ")
+## Contribution
+Feel free to fork the repository and submit pull requests with improvements or bug fixes.
 
-answer8 = input(" 8. Who was the first person to step on the moon? \n ")
-if answer8.lower() == "niel amstrong":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorrect Answer! \n ")
-
-answer9 = input(" 9. What is the study of weather called? \n ")
-if answer9.lower() == "meterology":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorrect Answer! \n ")
-
-answer10 = input(" 10. Which is the biggest continent in the world? \n ")
-if answer10.lower() == "asia" or "asian":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorrect Answer! \n ")
-
-answer11 = input(" 11. What is the coldest planet of our solar system? \n ")
-if answer11.lower() == "neptune":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorect Answer! \n ")
-
-answer12 = input(" 12. Approximately how many kilometers are represented by 1 degree of latitude? \n ")
-if answer12.lower() == "111 km" or "hundred and eleven":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorrect Answer! \n ")
-
-answer13 = input(" 13. Who is the most viewed and liked person in the internet? \n ")
-if answer13.lower() == "rock" or "dwyn jhonson":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorrect Answer! \n ")
-
-answer14 = input(" 14. What is the most expensive thing built in the entire world that costs around 100 billion US dollars? \n ")
-if answer14.lower() == "the international space station" or "iss":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorrect Answer! \n ")
-
-answer15 = input(" 15. What is the tallest mountain in the world? \n ")
-if answer15.lower() == "mt everest" or "everest":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorrect Answer! \n ")
-
-answer16 = input(" 16. Which planet was first to be discovered through a telescope by Herchel in 1781? \n ")
-if answer16.lower() == "uranus":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorrect Answer! \n ")
-
-answer17 = input(" 17. How many times a person can be elected as the President of USA? \n ")
-if answer17.lower() == "two times" or "2":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorrect Answer! \n ")
-
-answer18 = input(" 18. What is the 10th largest state in the United States of America? \n ")
-if answer18.lower() == "machigen" or "machigen state":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorrect Answer! \n ")
-
-answer19 = input(" 19. Where is the Area 51 located in the USA? \n ")
-if answer19.lower() == "ohio":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorrect Answer! \n ")
-
-answer20 = input(" 20. What is the abbrivation of GPU? \n ")
-if answer20.lower() == "graphical processing unit" or "graphic processing unit":
-    print(" Correct Answer! \n ")
-    score += 1
-else:
-    print(" Incorrect Answer! \n ")
-
-print(" Congradulations!")
-print(" You have got " + str(score) + " questions correct!")
-print(" You have scored " + str((score/20) * 100) + "%.")
-
+## License
+This project is open-source and available under the MIT License.
